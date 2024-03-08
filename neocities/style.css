@@ -43,8 +43,8 @@ hr {
     align-items: center;
 }
     #siteHeader nav ul {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
         list-style-type: none;
     }
         #siteHeader nav ul li {
@@ -55,7 +55,7 @@ hr {
                 text-decoration: none;
                 color: white;
                 font-size: 1.2rem;
-                padding: 0.25rem;
+                padding: 0.5rem;
             }
             #siteHeader nav ul li a:hover {
                 background-color: white;
