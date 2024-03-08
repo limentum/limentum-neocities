@@ -58,10 +58,10 @@ body {
             }
     @media (max-width: 400px) {
         #siteHeader h1 {
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
         #siteHeader nav ul li a {
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
         #siteHeader {
             padding-top: 0.25rem;
