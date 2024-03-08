@@ -9,60 +9,62 @@ body {
     margin: 0;
 }
 .body {
-    margin: 2rem;
+    padding: 2rem;
     text-align: justify;
 }
+#siteInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+    #siteInfo #logo {
+        padding: 0.5rem;
+        max-height: 10%;
+        width: auto;
+    }
+    #siteInfo h1 {
+        color: white;
+        display: inline-block;
+    }
 #siteHeader {
     background-color: darkblue;
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-    #siteHeader::after {
-        content: "";
-        display: table;
-        clear: both;
+    #siteHeader nav ul {
+        padding-left: 1rem;
+        padding-right: 0.25rem;
+        list-style-type: none;
     }
-    #siteHeader #logo {
-        float: left;
-        padding-right: 0.4rem;
-        max-width: 8%;
-        height: auto;
-    }
-    #headerContent {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-        #headerContent h1 {
-            margin: 1rem;
-            padding: 1rem;
-            color: white;
-            display: inline-block;
+        #siteHeader nav ul li {
+            display: inline;
+            margin: 0;
         }
-        #headerContent nav {
-            float: right;
-        }
-            #headerContent nav ul {
-                margin: 0;
-                padding: 1rem;
-                list-style: none;
-                font-size: 0rem;
+            #siteHeader nav ul li a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.2rem;
+                padding: 0.25rem;
             }
-                #headerContent nav ul li {
-                    display: inline;
-                    margin: 0;
-                }
-                    #headerContent nav ul li a {
-                        text-decoration: none;
-                        color: white;
-                        font-size: 1.2rem;
-                        padding: 1rem;
-                    }
-                    #headerContent nav ul li a:hover {
-                        background-color: white;
-                        color: darkblue;
-                    }
+            #siteHeader nav ul li a:hover {
+                background-color: white;
+                color: darkblue;
+            }
+    @media (max-width: 400px) {
+        #siteHeader h1 {
+            font-size: 1.5rem;
+        }
+        #siteHeader nav ul li a {
+            font-size: 1rem;
+        }
+        #siteHeader {
+            padding-top: 0.25rem;
+        }
+    }
 .skip-link {
     position: absolute;
     top: -40px;
