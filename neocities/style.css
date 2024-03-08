@@ -43,6 +43,7 @@ hr {
     align-items: center;
 }
     #siteHeader nav ul {
+        font-size: 0rem;
         padding-left: 0.25rem;
         padding-right: 0.25rem;
         list-style-type: none;
