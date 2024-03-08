@@ -61,6 +61,10 @@ hr {
                 background-color: white;
                 color: darkblue;
             }
+            #siteHeader nav ul li a:focus {
+                background-color: white;
+                color: darkblue;
+            }
     @media (max-width: 600px) {
         #siteHeader h1 {
             font-size: 1.5rem;
