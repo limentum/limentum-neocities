@@ -1,20 +1,65 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 body {
     background-color: white;
     color: black;
-    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Calibri, Arial, sans-serif;
+    margin: 0;
 }
-header {
+.body {
+    margin: 2rem;
+    text-align: justify;
+}
+#siteHeader {
     background-color: darkblue;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-    header img {
-      float: left;
-      padding-right: 1em;
+    #siteHeader::after {
+        content: "";
+        display: table;
+        clear: both;
     }
-#logo {
-    max-width: 8%;
-    height: auto;
-  }
+    #siteHeader #logo {
+        float: left;
+        padding-right: 0.4rem;
+        max-width: 8%;
+        height: auto;
+    }
+    #headerContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        #headerContent h1 {
+            margin: 1rem;
+            padding: 1rem;
+            color: white;
+            display: inline-block;
+        }
+        #headerContent nav {
+            float: right;
+        }
+            #headerContent nav ul {
+                margin: 0;
+                padding: 1rem;
+                list-style: none;
+                font-size: 0rem;
+            }
+                #headerContent nav ul li {
+                    display: inline;
+                    margin: 0;
+                }
+                    #headerContent nav ul li a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.2rem;
+                        padding: 1rem;
+                    }
+                    #headerContent nav ul li a:hover {
+                        background-color: white;
+                        color: darkblue;
+                    }
