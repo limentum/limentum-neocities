@@ -18,9 +18,11 @@ body {
     justify-content: space-evenly;
 }
     #siteInfo #logo {
-        padding: 0.5rem;
+        margin: 0.5rem;
         max-height: 10%;
         width: auto;
+        border: 0.1rem;
+        border-style: solid;
     }
     #siteInfo h1 {
         color: white;
@@ -37,7 +39,7 @@ body {
 }
     #siteHeader nav ul {
         padding-left: 1rem;
-        padding-right: 0.25rem;
+        padding-right: 1rem;
         list-style-type: none;
     }
         #siteHeader nav ul li {
